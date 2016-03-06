@@ -1,0 +1,534 @@
+/* -----------------------
+Base styles
+------------------------*/
+input, select, textarea{
+    border: solid 1px #E5E5E5;
+    margin: 5px 5px 5px 5px;
+    padding: .5em;
+    display:inline-block;
+    font-size:80%;
+    -ms-box-sizing:content-box;
+    -moz-box-sizing:content-box;
+    -webkit-box-sizing:content-box; 
+    box-sizing:content-box;
+}
+
+body
+{
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color:#a8a8a8;
+    font-family: "Calibri",serif;
+    font-size:medium;
+}
+
+h1,h2,h3,h4,h5,h6
+{
+    margin: 0 0 .5em;
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+h1 { font-size: 2.25em; } /* 36px */
+h2 { font-size: 1.75em; } /* 28px */
+h3 { font-size: 1.375em; } /* 22px */
+h4 { font-size: 1.125em; } /* 18px */
+h5 { font-size: 1em; } /* 16px */
+h6 { font-size: .875em; } /* 14px */
+
+p
+{
+    margin: 0;
+    line-height: 1.5;
+}
+table p{
+    display :inline;
+    font-size:110%;
+    width :30%;
+    text-align: left;
+    margin-left: 0.5em;
+    margin-right :0.5em;
+}
+.before{
+    display :inline-block;
+    font-size:110%;
+    width :40%;
+    float : left;
+    text-align: left;
+    color:#444;
+    margin-right :0.5em;
+
+}
+.after{
+    display :inline;
+    font-size:110%;
+    width :50%;
+    text-align: left;
+}
+table
+{
+
+    background-color: transparent;
+    border-spacing: 0;
+    border-collapse: collapse;
+
+}
+
+th, td
+{
+    padding: .5em .5em;
+    vertical-align: top;
+    text-align: left;
+    max-width:30em;
+}
+
+td h4 {
+    padding:.5em .5em .5em .5em;
+    background-color: #777;
+    color:white;
+    max-width:30em;
+   }
+th h4{
+    padding:.5em .5em .5em .5em;
+    background-color:#444;
+    font-weight: bold;
+    max-width:30em;
+}
+a{
+    color:white;
+    text-decoration: none;
+    border: 0;
+}
+a:focus{
+    color:black;
+}
+a:hover{
+    color:gray;
+}
+.main a{
+    color:#444;
+}
+
+/* -----------------------
+Layout styles
+------------------------*/
+
+.container
+{
+    max-width: 70em;
+    margin: 0 auto;
+
+}
+.header
+{
+    background-color: #24B5BC;
+    padding: 0;
+}
+.header p{
+    display:inline-block;
+    padding-top:5em;
+    font-family:Open Sans,sans-serif;
+    font-style: italic;
+    float:left;
+}
+#logo{
+    float:left;
+}
+#hands{
+    max-width:50%;
+}
+#gadgets1{
+    max-width:130%;
+}
+
+#profile_pic{
+    max-width:40%;
+}
+.search-bar{
+    padding:0;
+    display:inline-block;
+    float:right;
+    text-align:right;
+}
+
+.search-bar input, select{
+    padding: .25em;
+    display:inline-block;
+    -ms-box-sizing:content-box;
+    -moz-box-sizing:content-box;
+    -webkit-box-sizing:content-box; 
+    box-sizing:content-box;
+}
+.header .container{
+    max-width: 70em;
+}
+.clear{
+    clear:both;
+}
+.nav-bar
+{
+    background: #24B5BC;
+    padding: 0;
+}
+
+.content
+{
+    position:relative;
+    min-height: 35em;
+    height:100%;
+    overflow-y:auto;
+    padding: 1em 1.25em;
+}
+
+.main, .aside
+{
+
+    margin-bottom: 3em;
+}
+
+
+.footer
+{
+    font-size: 100%;
+    font-style:italic;
+    color: white;
+    padding: .5em .25em;
+}
+
+
+/* -----------------------
+Nav
+------------------------*/
+
+.nav
+{
+    font-size:120%;
+    font-weight:bold;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav li
+{
+    display: inline;
+    margin: 0;
+}
+
+.nav a
+{
+    display: block;
+    padding: .7em 1.25em;
+    border-bottom: 1px solid gray;
+}
+
+
+/* -----------------------
+Single styles
+------------------------*/
+
+.img-responsive { max-width: 50%;
+
+                  margin-top:2em}
+
+.btn
+{
+    color: #fff !important;
+    font-size:100%;
+    background-color: #a8a8a8;
+    display:inline-block;
+    height:1em;
+    padding: .25em ;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 1px solid transparent;
+    box-shadow: 0px 2px 2px #777;
+    border-radius: .2em;
+    text-decoration: none;
+
+}
+
+
+label {
+    display :inline-block;
+    font-size:110%;
+    width :20%;
+    float : left;
+    text-align: left;
+    margin-left: 0.5em;
+    margin-right :0.5em;
+
+}
+
+.btn:hover
+{
+    color: #fff !important;
+    background-color: #a1a1a1;
+}
+
+.btn:focus
+{
+    color: #fff !important;
+    background-color: #a8a8a8;
+}
+
+.btn:active
+{
+    color: #fff !important;
+    background-color: #a1a1a1;
+}
+
+.main .btn{
+    background-color: gray; 
+    padding: .4em ;
+    font-size:120%;
+    margin-bottom:1em;
+}
+
+.main .btn:hover
+{
+    color: #fff !important;
+    background-color: #24B5BC;
+}
+.table
+{
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+
+/* -----------------------
+Wide styles
+------------------------*/
+
+@media (min-width: 55em)
+{
+    .header { padding-top: 1.5em; }
+    .nav-bar { padding: 1em 3em; }
+    .content { padding: 2em 3em; }
+
+    .main
+    {
+        float: left;
+        width: 65%;
+        margin-right: 5%;
+        margin-bottom: 1em;
+    }
+
+    .aside
+    {
+        float: left;
+        width: 30%;
+        margin-bottom: 1em;
+    }
+
+    .footer { padding: 0; }
+
+    .nav li
+    {
+        display: inline;
+        margin: 0 1em 0 0;
+    }
+
+    .nav a
+    {
+        display: inline;
+        padding: 0;
+        border-bottom: 0;
+    }
+}
+
+/*FORMATTING REGISTER PAGE FORMS*/
+
+/*Allows to toggle each section in register form*/
+.formWrap{
+    border: none;
+    position:relative;
+    width:400px;
+}
+
+.formWrap h3 {
+    padding:.5em .5em .5em .5em;
+    background-color: gray;
+    color:white;
+
+}
+/* do not display forms initially*/
+.formWrap form {
+    display:none;
+}
+.formWrap label{
+    width:40%;
+    margin-right :0.5em;
+}
+.formWrap input
+{
+    width:40%;
+}
+
+.formWrap select{
+    width:41.5%;
+}
+
+form.active{
+    display:block;
+}
+/*set widths for forms*/
+form.registerInsurer{
+    width:400px;
+}
+form.registerInsured{
+    width:400px;
+}
+
+/* Allow forms and text to be collapsed*/
+.section {
+    display: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position:relative;
+}
+
+/*Format add requirements/threeshold page*/
+
+.reqWrap{
+    border: none;
+    position:relative;
+    width:400px;
+}
+.reqWrap select
+{
+    width:40%;
+}
+.reqWrap label{
+     width:40%;
+    margin-right :0.5em;
+}
+
+/*Miscallenous formatting*/
+.current h3{
+    background: #444;
+}
+.current .now{
+    background:#777;
+}
+.active .now {
+    background:#24B5BC;
+}
+#error{
+    color:red;
+    font-weight:bold;
+    padding-left:2em;
+    padding-bottom: 1em;
+}
+.sectionheader h4{
+    padding:.5em .5em .5em .5em;
+    background-color: #777;
+    color:white;
+    max-width:30em;
+} 
+.main h2{
+    padding:.5em .5em .5em .5em;
+    background-color: #777;
+    color:white;
+}
+
+.top{
+     padding:.25em .25em .25em .25em;
+    background-color: gray;
+}
+.main h3{
+    margin-top:.5em;
+    padding:.25em .25em .25em .25em;
+    background-color: #a1a1a1;
+    color:white;
+}
+.registerpage h3{
+    margin-top:.5em;
+    padding:.5em .5em .5em .5em;
+    background-color: gray;
+    color:white;
+}
+.main .intro{
+     background-color:#a8a8a8;
+     padding:0;
+}
+
+/*format rating boxes*/
+.rate{
+    display:block;
+     padding-top:1.5em;
+     padding-bottom:1em;
+}
+
+.rating {
+    float:left;
+}
+
+/* :not(:checked) is a filter, so that browsers that don’t support :checked don’t 
+   follow these rules. Every browser that supports :checked also supports :not(), so
+   it doesn’t make the test unnecessarily selective */
+.rating:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+    clip:rect(0,0,0,0);
+}
+
+.rating:not(:checked) > label {
+    float:right;
+    width:1em;
+    padding:0 .1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:200%;
+    line-height:1.2;
+    color:#ddd;
+    text-shadow:1px 1px #bbb, 2px 2px #666, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating:not(:checked) > label:before {
+    content: '★ ';
+}
+
+.rating > input:checked ~ label {
+    color: #f70;
+    text-shadow:1px 1px #c60, 2px 2px #940, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+    color: gold;
+    text-shadow:1px 1px goldenrod, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating > input:checked + label:hover,
+.rating > input:checked + label:hover ~ label,
+.rating > input:checked ~ label:hover,
+.rating > input:checked ~ label:hover ~ label,
+.rating > label:hover ~ input:checked ~ label {
+    color: #ea0;
+    text-shadow:1px 1px goldenrod, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.rating > label:active {
+    position:relative;
+    top:2px;
+    left:2px;
+}
+
+/*star rating for profile, used http://jsbin.com/tuyelezahe/1/edit*/
+span.stars, span.stars>* {
+    display: inline-block;
+    background: url(stars.png) 0 -50px repeat-x;
+    width: 250px;
+    height: 50px;
+}
+span.stars>*{
+    max-width:250px;
+    background-position: 0 0;
+}
